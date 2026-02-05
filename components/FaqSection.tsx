@@ -5,34 +5,34 @@ import { motion } from "framer-motion";
 
 const faqs = [
   {
-    question: "What cleaning services do you provide?",
+    question: "What areas do you cover for home cleaning services in Pune?",
     answer:
-      "We offer residential, commercial, deep cleaning, sofa and carpet cleaning, kitchen, bathroom, and post-renovation cleaning services.",
+      "We provide professional home cleaning services across Pune, including Kharadi, Hadapsar, Undri, Mohammadwadi, Amanora Park, Magarpatta, and nearby areas.",
   },
   {
-    question: "Do I need to be home during the cleaning?",
+    question: "Do you offer same-day deep home cleaning services in Pune?",
     answer:
-      "No, it’s not required. Many of our clients provide access instructions so we can clean while they’re away.",
+      "Yes. Based on availability, we provide same-day deep cleaning services in Pune. Call or WhatsApp us to book your slot.",
   },
   {
-    question: "Do you bring your own cleaning supplies?",
+    question: "What is included in your deep cleaning service?",
     answer:
-      "Yes, our team comes fully equipped with professional-grade tools and eco-friendly cleaning products.",
+      "Our deep cleaning service covers floors, kitchen, bathrooms, bedrooms, living areas, windows, sofa, mattress, and hard-to-reach corners using professional equipment.",
   },
   {
-    question: "How long does a cleaning session take?",
+    question: "How much does home cleaning cost in Pune?",
     answer:
-      "The duration depends on the size of the space and the type of service. A standard home usually takes 2–4 hours.",
+      "The cost of our home cleaning and deep cleaning services in Pune depends on your home size, service type (regular or deep cleaning), and specific requirements.",
   },
   {
-    question: "Are your cleaning staff trained and verified?",
+    question: "How long does house cleaning usually take?",
     answer:
-      "Absolutely. All our cleaners are background-checked, professionally trained, and supervised for quality assurance.",
+      "A standard house cleaning service in Pune takes 3–6 hours depending on home size and service type.",
   },
   {
-    question: "How can I book a cleaning service?",
+    question: "Do you bring your own cleaning equipment and materials?",
     answer:
-      "You can book directly through our website, WhatsApp, or by calling our support team.",
+      "Yes. Our professional home cleaners in Pune arrive fully equipped with advanced tools and safe cleaning solutions - you don’t need to arrange anything.",
   },
 ];
 
@@ -60,7 +60,7 @@ export default function FaqSection() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-8 md:mb-12"
+          className="relative flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-8 md:mb-10"
         >
           {/* Left line */}
           <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-l from-blue-500 to-transparent mr-4"></span>

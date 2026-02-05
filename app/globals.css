@@ -33,8 +33,6 @@ body {
   );
 }
 
-
-
 .primary {
   color: #2D2F92;
 }
@@ -101,25 +99,4 @@ body {
 .button:active:before,
 .button:active:after {
   background: #005bbb; /* Dark blue on click */
-}
-
-.services-swiper {
-  padding-bottom: 40px;
-}
-
-.services-swiper .swiper-pagination {
-  bottom: 0 !important;
-}
-
-.services-swiper .swiper-pagination-bullet {
-  background: #cbd5e1;
-  opacity: 1;
-  width: 8px;
-  height: 8px;
-}
-
-.services-swiper .swiper-pagination-bullet-active {
-  background: #2563eb;
-  width: 20px;
-  border-radius: 999px;
 }

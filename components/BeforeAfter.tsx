@@ -10,12 +10,10 @@ type Item = {
 };
 
 const items: Item[] = [
-  { label: "Kitchen", image: "/demo.png" },
-  { label: "Bathroom", image: "/demo.png" },
-  { label: "Sofa", image: "/demo.png" },
-  { label: "Floor", image: "/demo.png" },
-  { label: "Bedroom", image: "/demo.png" },
-  { label: "Office", image: "/demo.png" },
+  { label: "Basin Cleaning", image: "/Before-After/basin-cleaning.webp" },
+  { label: "kitchen Basin Cleaning", image: "/Before-After/kitchen-basin-cleaning.webp" },
+  { label: "Kitechen Cleaning", image: "/Before-After/kitchen-cleaning.webp" },
+  { label: "Washroom Cleaning", image: "/Before-After/washroom-cleaning.webp" },
 ];
 
 function useVisibleCount() {
@@ -47,21 +45,12 @@ export default function BeforeAfterCarousel() {
   const prev = () => setIndex((i) => Math.max(i - 1, 0));
 
   return (
-    <section className="py-10">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
-        <div className="text-center mb-14 px-4">
-          {/* Subtitle */}
-          <p className="mx-auto text-center text-[11px] sm:text-xs font-semibold tracking-widest text-blue-700 uppercase mb-3 px-3 py-1 border border-blue-300 rounded-xl inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-blue-50 shadow-md">
-            {/* Decorative Dot */}
-            <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
-
-            {/* Text */}
-            Services
-          </p>
-
+        <div className="text-center mb-10 px-4">
           {/* Main Heading with gradient lines */}
-          <h2 className="relative flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-4 md:mb-6">
+          <h2 className="relative flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-2 md:mb-2">
             {/* Left line */}
             <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-l from-blue-500 to-transparent mr-4"></span>
 
@@ -71,6 +60,9 @@ export default function BeforeAfterCarousel() {
             {/* Right line */}
             <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-r from-blue-500 to-transparent ml-4"></span>
           </h2>
+          <p className="text-sm text-slate-600 font-bold max-w-2xl mx-auto">
+            From Dusty to Dazzling - Real Results from Pune Homes.
+          </p>
 
         </div>
 
@@ -142,7 +134,7 @@ export default function BeforeAfterCarousel() {
           </div>
 
           {/* Dots */}
-          <div className="flex justify-center gap-3 mt-8">
+          {/* <div className="flex justify-center gap-3 mt-8">
             {Array.from({ length: dotsCount }).map((_, i) => (
               <button
                 key={i}
@@ -154,7 +146,7 @@ export default function BeforeAfterCarousel() {
                 }`}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

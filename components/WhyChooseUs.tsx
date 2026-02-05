@@ -34,7 +34,7 @@ const items = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-10 relative overflow-hidden">
+    <section className="py-8 relative overflow-hidden">
 
       <div className="max-w-7xl mx-auto px-6 relative">
         {/* Subtitle */}
@@ -53,7 +53,7 @@ export default function WhyChooseUs() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12 sm:mb-16 px-4"
+          className="text-center mb-10 sm:mb-16 px-4"
         >
           <h2 className="relative flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-8 md:mb-12">
             {/* Left line */}
@@ -101,7 +101,7 @@ function FeatureCard({
       ring-1 ring-slate-200 
       transition-all duration-300
       hover:shadow-xl hover:ring-blue-200
-      bg-gradient-to-br from-blue-400/30 to-cyan-400/10"
+      bg-gradient-to-br from-blue-600/40 to-cyan-300/10"
     >
       {/* Glow */}
       <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0

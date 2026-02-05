@@ -1,62 +1,55 @@
 "use client";
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Pagination,Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 
 const services = [
   {
     title: "Home Deep Cleaning",
-    text:
-      "Complete top-to-bottom cleaning for bedrooms, living areas, kitchens, and bathrooms - removing dust, grease, and germs for a healthier home.",
-    image: "/demo.png",
+    text: "Complete top-to-bottom cleaning for bedrooms, living areas, kitchens, and bathrooms - removing dust, grease, and germs for a healthier home.",
+    image: "Services/Deep-cleaning.jpeg",
   },
   {
     title: "Housekeeping Services",
-    text:
-      "Regular or one-time housekeeping to keep your home or office consistently clean, organized, and fresh.",
-    image: "/demo.png",
+    text: "Regular or one-time housekeeping to keep your home or office consistently clean, organized, and fresh.",
+    image: "Services/Housekeeping-Services.jpeg",
   },
   {
     title: "Bathroom & Kitchen Cleaning",
-    text:
-      "Powerful stain removal, descaling, and sanitization for hygienic, sparkling bathrooms and grease-free kitchens.",
-    image: "/demo.png",
+    text: "Powerful stain removal, descaling, and sanitization for hygienic, sparkling bathrooms and grease-free kitchens.",
+    image: "Services/bathroom.jpeg",
   },
   {
     title: "Sofa & Mattress Cleaning",
-    text:
-      "Professional shampooing and vacuum cleaning to eliminate dust mites, odors, and stains - bringing your furniture back to life.",
-    image: "/demo.png",
+    text: "Professional shampooing and vacuum cleaning to eliminate dust mites, odors, and stains - bringing your furniture back to life.",
+    image: "Services/Sofa-Mattress-Cleaning.jpeg",
   },
   {
     title: "Window & Balcony Cleaning",
-    text:
-      "Crystal-clear glass and spotless balconies using safe tools and professional techniques.",
-    image: "/demo.png",
+    text: "Crystal-clear glass and spotless balconies using safe tools and professional techniques.",
+    image: "Services/balcony.jpeg",
   },
   {
     title: "Move-In / Move-Out Cleaning",
-    text:
-      "Deep cleaning before you move in or after you move out - perfect for tenants, landlords, and property managers.",
-    image: "/demo.png",
+    text: "Deep cleaning before you move in or after you move out - perfect for tenants, landlords, and property managers.",
+    image: "Services/move-in-cleaning.jpeg",
   },
   {
     title: "Residential Apartment Cleaning",
-    text:
-      "Our Residential Apartment Cleaning Service is the easiest way to get a super clean home altogether.",
-    image: "/demo.png",
+    text:  "Our Residential Apartment Cleaning Service is the easiest way to get a super clean home altogether.",
+    image: "Services/apartment.jpeg",
   },
 ];
 
 export default function ServicesSection() {
   return (
-    <section className="py-10 px-4">
+    <section className="py-8 px-4">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
-        <div className="text-center mb-14 px-4">
+        <div className="text-center mb-10 px-4">
           {/* Subtitle */}
           <p className="mx-auto text-center text-[11px] sm:text-xs font-semibold tracking-widest text-blue-500 uppercase mb-3 px-3 py-1 border border-blue-300 rounded-xl inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-blue-50 shadow-md">
             {/* Decorative Dot */}
@@ -82,11 +75,17 @@ export default function ServicesSection() {
 
         {/* Carousel */}
         <Swiper
-          modules={[Pagination]}
+          modules={[Pagination, Autoplay]}
+          pagination={false}
           spaceBetween={24}
           grabCursor={true}
-          pagination={{ clickable: true }}
           slidesPerView={1}
+          autoplay={{
+            delay: 3000,        // ⏱ wait 3 seconds
+            disableOnInteraction: false, // keep autoplay after swipe
+            pauseOnMouseEnter: true,     // pause on hover (nice UX)
+          }}
+          speed={800} // smooth slide animation
           breakpoints={{
             640: { slidesPerView: 1 },
             768: { slidesPerView: 2 },

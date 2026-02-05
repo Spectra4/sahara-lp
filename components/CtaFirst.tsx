@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function CtaFirst() {
   return (
-    <section className="w-full px-4 py-12">
+    <section className="w-full px-4 py-8">
       <div
         className="
         relative mx-auto max-w-5xl
