@@ -21,23 +21,7 @@ export default function Footer() {
         {/* Quick Links */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-          <ul className="space-y-2 text-gray-200">
-            {[
-              { name: "Home", href: "/" },
-              { name: "About Us", href: "/about" },
-              { name: "Products", href: "/products" },
-              { name: "Contact", href: "/contact" },
-            ].map((item) => (
-              <li key={item.name}>
-                <Link
-                  href={item.href}
-                  className="hover:text-white hover:underline transition-all"
-                >
-                  {item.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
+          
         </div>
 
         {/* Contact Info */}
