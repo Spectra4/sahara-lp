@@ -10,7 +10,7 @@ export default function CtaFirst() {
         className="
         relative mx-auto max-w-5xl
         rounded-2xl
-        bg-gradient-to-r from-indigo-900 via-blue-900 to-indigo-900
+        bg-gradient-to-r from-blue-900 via-blue-900 to-blue-900
         shadow-xl overflow-hidden
       "
       >

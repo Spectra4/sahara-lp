@@ -132,32 +132,11 @@ export default function Stats() {
   return (
     <section
       ref={ref}
-      className="py-10"
+      className="py-10 pt-12"
     >
 
       <div className="text-center max-w-7xl mx-auto px-6">
-        {/* Subtitle */}
-        <p className="mx-auto text-center text-[11px] sm:text-xs font-semibold tracking-widest text-indigo-700 uppercase mb-3 px-3 py-1 border border-indigo-300 rounded-xl inline-flex items-center gap-2 bg-gradient-to-r from-indigo-100 to-indigo-50 shadow-md">
-          {/* Decorative Dot */}
-          <span className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></span>
-
-          {/* Text */}
-          Visual Proof
-        </p>
-        {/* Heading */}
-        <h2 className="relative flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-8 md:mb-12">
-          {/* Left line */}
-          <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-l from-indigo-500 to-transparent mr-4"></span>
-
-          {/* Text */}
-          See the Difference We Create
-
-          {/* Right line */}
-          <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-r from-indigo-500 to-transparent ml-4"></span>
-        </h2>
-
-
-
+        
         {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => {

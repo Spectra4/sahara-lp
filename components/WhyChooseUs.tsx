@@ -39,9 +39,9 @@ export default function WhyChooseUs() {
       <div className="max-w-7xl mx-auto px-6 relative">
         {/* Subtitle */}
         <div className="text-center max-w-7xl mx-auto px-6 relative">
-          <p className="mx-auto text-center text-[11px] sm:text-xs font-semibold tracking-widest text-indigo-700 uppercase mb-3 px-3 py-1 border border-indigo-300 rounded-xl inline-flex items-center gap-2 bg-gradient-to-r from-indigo-100 to-indigo-50 shadow-md">
+          <p className="mx-auto text-center text-[11px] sm:text-xs font-semibold tracking-widest text-blue-700 uppercase mb-3 px-3 py-1 border border-blue-300 rounded-xl inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-blue-50 shadow-md">
           {/* Decorative Dot */}
-          <span className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></span>
+          <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
 
           {/* Text */}
           Why Choose Us
@@ -55,15 +55,15 @@ export default function WhyChooseUs() {
           transition={{ duration: 0.6 }}
           className="text-center mb-12 sm:mb-16 px-4"
         >
-          <h2 className="relative flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-8 md:mb-12">
+          <h2 className="relative flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-8 md:mb-12">
             {/* Left line */}
-            <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-l from-indigo-500 to-transparent mr-4"></span>
+            <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-l from-blue-500 to-transparent mr-4"></span>
 
             {/* Text */}
             Why Choose Sahara Cleaning Services in Pune
 
             {/* Right line */}
-            <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-r from-indigo-500 to-transparent ml-4"></span>
+            <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-r from-blue-500 to-transparent ml-4"></span>
           </h2>
         </motion.div>
 
@@ -100,8 +100,8 @@ function FeatureCard({
       className="group relative rounded-2xl p-8 shadow-sm
       ring-1 ring-slate-200 
       transition-all duration-300
-      hover:shadow-xl hover:ring-indigo-200
-      bg-gradient-to-br from-indigo-400/30 to-cyan-400/10"
+      hover:shadow-xl hover:ring-blue-200
+      bg-gradient-to-br from-blue-400/30 to-cyan-400/10"
     >
       {/* Glow */}
       <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0
@@ -109,7 +109,7 @@ function FeatureCard({
   
       {/* Icon */}
       <div className="relative z-10 mb-6 flex h-14 w-14 items-center justify-center
-        rounded-full bg-indigo-50 text-indigo-600
+        rounded-full bg-blue-50 text-blue-600
         ring-8 ring-white shadow-md
         transition-transform duration-300
         group-hover:scale-110">
