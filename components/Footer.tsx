@@ -7,21 +7,30 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#182950] text-white pt-16 pb-10">
+    <footer
+      className="
+      bg-[#182950] text-white
+      pt-16 pb-10
+      rounded-t-[40px]
+      overflow-hidden
+    "
+    >
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
 
         {/* Company Info */}
         <div>
           <h2 className="text-2xl font-bold mb-4">Sahara Cleaning</h2>
           <p className="text-gray-200 leading-relaxed">
-            Sahara Cleaning is a premier provider of industrial cleaning solutions, dedicated to delivering top-notch services that ensure safety, efficiency, and environmental compliance for businesses worldwide.
+            Sahara Cleaning is a premier provider of industrial cleaning solutions,
+            dedicated to delivering top-notch services that ensure safety,
+            efficiency, and environmental compliance for businesses worldwide.
           </p>
         </div>
 
         {/* Quick Links */}
         <div>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
-          
+          {/* add links later */}
         </div>
 
         {/* Contact Info */}
@@ -48,12 +57,11 @@ export default function Footer() {
           <h3 className="text-xl font-semibold mb-4">Location Map</h3>
           <div className="rounded-2xl overflow-hidden shadow-xl border border-white/20">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.298231842842!2d73.85674397496377!3d18.515009982578307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c076b0000001%3A0x38dcb1d8c41e6bb9!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1709988888888"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.298231842842!2d73.85674397496377!3d18.515009982578307!"
               width="100%"
               height="180"
-              allowFullScreen
               loading="lazy"
-            ></iframe>
+            />
           </div>
         </div>
       </div>

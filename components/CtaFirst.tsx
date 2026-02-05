@@ -10,7 +10,7 @@ export default function CtaFirst() {
         className="
         relative mx-auto max-w-5xl
         rounded-2xl
-        bg-gradient-to-r from-blue-900 via-blue-900 to-blue-900
+        bg-gradient-to-r from-blue-500 via-blue-400 to-indigo-500
         shadow-xl overflow-hidden
       "
       >
@@ -29,7 +29,7 @@ export default function CtaFirst() {
             </p>
           </div>
 
-          {/* Buttons BELOW text */}
+          {/* Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 mt-2">
             
             {/* Call Now */}
@@ -48,16 +48,18 @@ export default function CtaFirst() {
               Call Now
             </a>
 
-            {/* Book Slot */}
+            {/* Book Slot – GREEN */}
             <Link
               href="/book-slot"
               className="
               inline-flex items-center justify-center gap-2
-              rounded-full border border-white/30
+              rounded-full
+              bg-gradient-to-r from-green-500 to-emerald-500
+              hover:from-green-600 hover:to-emerald-600
               px-8 py-3
               text-sm md:text-base font-semibold text-white
-              hover:bg-white/10
               transition-all duration-300
+              shadow-lg hover:shadow-green-500/40
             "
             >
               <Calendar size={18} />
