@@ -53,28 +53,28 @@ const colorClasses = {
 
 const stats: Stat[] = [
   {
-    label: "Initiatives",
-    value: 5,
+    label: "Years Experience",
+    value: 16,
     icon: <Sparkles className="h-6 w-6" />,
     color: "orange",
   },
   {
-    label: "Caregivers",
-    value: 80,
+    label: "Trained Cleaning Expert",
+    value: 50,
     suffix: "+",
     icon: <Users className="h-6 w-6" />,
     color: "blue",
   },
   {
-    label: "Children in Care",
-    value: 260,
+    label: "Happy Customers",
+    value: 900,
     suffix: "+",
     icon: <Home className="h-6 w-6" />,
     color: "emerald",
   },
   {
-    label: "Lives Nurtured",
-    value: 2100,
+    label: "Successful Completed Projects",
+    value: 2000,
     suffix: "+",
     icon: <HeartHandshake className="h-6 w-6" />,
     color: "rose",

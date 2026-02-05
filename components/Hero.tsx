@@ -10,7 +10,7 @@ export default function Hero() {
       />
 
       {/* Premium Overlay */}
-      {/* <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/85 to-white/40" /> */}
+      <div className="absolute inset-0 bg-gradient-to-r from-white/75 via-white/65 to-white/25" /> 
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
@@ -21,24 +21,23 @@ export default function Hero() {
           </span>
 
           {/* Heading */}
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-slate-900">
-            Expert Sanitizing & <br />
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-slate-900">
+            Professional Home<br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
               Deep Cleaning
             </span>{" "}
-            Solutions
+            Services in Pune
           </h1>
 
           {/* Description */}
-          <p className="mt-6 text-lg text-slate-600">
-            Professional cleaning services delivering hygiene, safety, and a
-            spotless environment for homes and businesses.
+          <p className="mt-6 text-lg text-slate-800">
+            Keep your home clean, spotless, and hygienic at an affordable cost.
           </p>
 
           {/* CTA */}
           <div className="mt-8">
             <button className="px-8 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-500 hover:opacity-90 transition">
-              Call Now
+              Book Your Cleaning Today
             </button>
           </div>
         </div>

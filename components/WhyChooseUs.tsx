@@ -11,23 +11,23 @@ import React from "react";
 
 const items = [
   {
-    title: "Tailor-Made Crusher Plants",
-    desc: "Fully customized plants engineered for specific materials, production needs, and site conditions.",
-    icon: Cog,
-  },
-  {
-    title: "Zero Civil Work Required",
-    desc: "Nut–bolt structure eliminates foundation work, drastically reduces cost, and enables quick installation.",
-    icon: CheckCircle,
-  },
-  {
-    title: "Ultra-Fast 15-Day Setup",
-    desc: "Modular engineering ensures complete installation and commissioning in just 15 days.",
+    title: "Same-Day Service Available",
+    desc: "Book today, get your home cleaned the same day - fast, reliable service across Pune.",
     icon: Timer,
   },
   {
-    title: "100% Movable & Wheel-Mounted",
-    desc: "Maximum flexibility with a fully wheel-mounted design for easy relocation.",
+    title: "Affordable & Transparent Pricing",
+    desc: "No hidden charges. Honest pricing with quality service.",
+    icon: CheckCircle,
+  },
+  {
+    title: "Deep Cleaning Specialists",
+    desc: "Every corner. Every surface. No shortcuts - just thorough cleaning for stress-free living.",
+    icon: Cog,
+  },
+  {
+    title: "100% Satisfaction Guaranteed",
+    desc: "We clean until you’re happy - that’s our promise.",
     icon: Move,
   },
 ];
@@ -36,15 +36,17 @@ export default function WhyChooseUs() {
   return (
     <section className="py-10 relative overflow-hidden">
 
-      <div className=" text-center max-w-7xl mx-auto px-6 relative">
+      <div className="max-w-7xl mx-auto px-6 relative">
         {/* Subtitle */}
-        <p className="mx-auto text-center text-[11px] sm:text-xs font-semibold tracking-widest text-indigo-700 uppercase mb-3 px-3 py-1 border border-indigo-300 rounded-xl inline-flex items-center gap-2 bg-gradient-to-r from-indigo-100 to-indigo-50 shadow-md">
+        <div className="text-center max-w-7xl mx-auto px-6 relative">
+          <p className="mx-auto text-center text-[11px] sm:text-xs font-semibold tracking-widest text-indigo-700 uppercase mb-3 px-3 py-1 border border-indigo-300 rounded-xl inline-flex items-center gap-2 bg-gradient-to-r from-indigo-100 to-indigo-50 shadow-md">
           {/* Decorative Dot */}
           <span className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></span>
 
           {/* Text */}
           Why Choose Us
         </p>
+        </div>
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -58,7 +60,7 @@ export default function WhyChooseUs() {
             <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-l from-indigo-500 to-transparent mr-4"></span>
 
             {/* Text */}
-            See the Difference We Create
+            Why Choose Sahara Cleaning Services in Pune
 
             {/* Right line */}
             <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-r from-indigo-500 to-transparent ml-4"></span>
@@ -96,15 +98,15 @@ function FeatureCard({
       transition={{ delay: index * 0.08 }}
       whileHover={{ y: -8 }}
       className="group relative rounded-2xl p-8 shadow-sm
-      ring-1 ring-slate-200
+      ring-1 ring-slate-200 
       transition-all duration-300
-      hover:shadow-xl hover:ring-indigo-200"
+      hover:shadow-xl hover:ring-indigo-200
+      bg-gradient-to-br from-indigo-400/30 to-cyan-400/10"
     >
       {/* Glow */}
       <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-0
-        bg-gradient-to-br from-indigo-500/10 to-cyan-400/10
-        transition-opacity duration-300 group-hover:opacity-100" />
-
+        transition-opacity duration-300 group-hover:opacity-100 bg-cyan-100" />
+  
       {/* Icon */}
       <div className="relative z-10 mb-6 flex h-14 w-14 items-center justify-center
         rounded-full bg-indigo-50 text-indigo-600

@@ -42,15 +42,17 @@ export default function FaqSection() {
   return (
     <section className="py-10 relative overflow-hidden">
 
-      <div className="text-center  relative z-10 max-w-4xl mx-auto px-4">
+      <div className="relative z-10 max-w-4xl mx-auto px-4">
         {/* Subtitle */}
-        <p className="mx-auto text-center text-[11px] sm:text-xs font-semibold tracking-widest text-indigo-700 uppercase mb-3 px-3 py-1 border border-indigo-300 rounded-xl inline-flex items-center gap-2 bg-gradient-to-r from-indigo-100 to-indigo-50 shadow-md">
+        <div className="text-center max-w-7xl mx-auto px-4">
+          <p className="mx-auto text-center text-[11px] sm:text-xs font-semibold tracking-widest text-indigo-700 uppercase mb-3 px-3 py-1 border border-indigo-300 rounded-xl inline-flex items-center gap-2 bg-gradient-to-r from-indigo-100 to-indigo-50 shadow-md">
           {/* Decorative Dot */}
           <span className="w-2 h-2 bg-indigo-500 rounded-full animate-pulse"></span>
 
           {/* Text */}
           FAQ
         </p>
+        </div>
 
 
         {/* Heading */}
