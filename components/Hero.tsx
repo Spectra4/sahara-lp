@@ -53,19 +53,20 @@ export default function Hero() {
             </p>
 
             {/* Trust Highlights */}
-            <ul className="mt-6 space-y-3 text-base font-semibold text-slate-900">
+            <ul className="mt-6 space-y-3 text-base font-semibold text-slate-900
+              flex flex-col items-center lg:items-start">
 
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-3 justify-center lg:justify-start">
                 <CheckCircle className="w-5 h-5 text-blue-600" />
                 <span>16+ Years Experience</span>
               </li>
 
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-3 justify-center lg:justify-start">
                 <IndianRupee className="w-5 h-5 text-blue-600" />
                 <span>Affordable Cost</span>
               </li>
 
-              <li className="flex items-center gap-3">
+              <li className="flex items-center gap-3 justify-center lg:justify-start">
                 <Star className="w-5 h-5 text-blue-600" />
                 <span>16k+ Google Reviews</span>
               </li>
