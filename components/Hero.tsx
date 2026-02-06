@@ -74,17 +74,35 @@ export default function Hero() {
             </ul>
 
             {/* CTA */}
-            <div className="mt-8">
-              <button
-                onClick={() => setOpen(true)}
-                className="px-8 py-4 rounded-xl font-semibold text-white
+            <div className="mt-8 relative inline-block">
+              {/* Wave 1 */}
+              <span className="absolute inset-0 rounded-xl
+                bg-cyan-400/25
+                animate-[ping_2.8s_ease-in-out_infinite]" />
+
+              {/* Wave 2 */}
+              <span className="absolute inset-0 rounded-xl
+                bg-blue-500/20
+                animate-[ping_2.8s_ease-in-out_infinite]
+                [animation-delay:0.9s]" />
+
+              {/* Wave 3 */}
+              <span className="absolute inset-0 rounded-xl
+                bg-indigo-500/15
+                animate-[ping_2.8s_ease-in-out_infinite]
+                [animation-delay:1.8s]" />
+
+              {/* CTA Button */}
+              <a
+                href="tel:+918956567130"
+                className="relative z-10 inline-block px-8 py-4 rounded-xl
+                font-semibold text-white
                 bg-gradient-to-r from-blue-600 to-cyan-500
                 hover:opacity-90 transition"
               >
-                Book Your Cleaning Today
-              </button>
+                Call Now
+              </a>
             </div>
-
           </div>
         </div>
       </section>
