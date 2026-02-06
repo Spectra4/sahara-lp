@@ -52,13 +52,13 @@ export default function BeforeAfterCarousel() {
           {/* Main Heading with gradient lines */}
           <h2 className="relative flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 mb-2 md:mb-2">
             {/* Left line */}
-            <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-l from-blue-500 to-transparent mr-4"></span>
+            <span className="hidden sm:inline-block w-30 h-1 bg-gradient-to-l from-blue-500 to-transparent mr-6"></span>
 
             {/* Text */}
             See the Difference We Create
 
             {/* Right line */}
-            <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-r from-blue-500 to-transparent ml-4"></span>
+            <span className="hidden sm:inline-block w-30 h-1 bg-gradient-to-r from-blue-500 to-transparent ml-6"></span>
           </h2>
           <p className="text-sm text-slate-600 font-bold max-w-2xl mx-auto">
             From Dusty to Dazzling - Real Results from Pune Homes.

@@ -31,6 +31,28 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold mb-4">Quick Links</h3>
           {/* add links later */}
+          <ul className="space-y-3 text-gray-200">
+            <li>
+              <Link href="#home" className="hover:text-blue-400 transition-colors duration-300">
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="#services" className="hover:text-blue-400 transition-colors duration-300">
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link href="#reviews" className="hover:text-blue-400 transition-colors duration-300">
+                Reviews
+              </Link>
+            </li>
+            <li>
+              <Link href="#faq" className="hover:text-blue-400 transition-colors duration-300">
+                FAQ
+              </Link>
+            </li>
+          </ul>
         </div>
 
         {/* Contact Info */}

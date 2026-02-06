@@ -1,4 +1,6 @@
 import { Phone, MessageCircle } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 export default function CtaSecond() {
   return (
@@ -63,7 +65,7 @@ export default function CtaSecond() {
 
             {/* Call */}
             <a
-              href="tel:+919999999999"
+              href="tel:+918956567130"
               className="inline-flex items-center justify-center gap-2
                 px-7 py-3 rounded-xl bg-white text-blue-700 font-semibold
                 shadow-lg hover:shadow-2xl hover:-translate-y-0.5 transition-all"
@@ -74,7 +76,7 @@ export default function CtaSecond() {
 
             {/* WhatsApp */}
             <a
-              href="https://wa.me/919999999999"
+              href="https://wa.me/918956567130"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2
@@ -82,7 +84,7 @@ export default function CtaSecond() {
                 text-white font-semibold shadow-lg hover:shadow-2xl
                 hover:-translate-y-0.5 transition-all"
             >
-              <MessageCircle size={18} />
+              <FaWhatsapp className="text-lg" />
               WhatsApp Us
             </a>
 

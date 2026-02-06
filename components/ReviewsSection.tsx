@@ -83,20 +83,20 @@ export default function ReviewsSection() {
   };
 
   return (
-    <section className="py-8">
+    <section className="py-8" id="reviews">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* HEADER */}
-        <div className="text-center mb-12">
-          <p className="mx-auto text-[11px] sm:text-xs font-semibold tracking-widest text-blue-700 uppercase mb-3 px-3 py-1 border border-blue-300 rounded-xl inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-blue-50 shadow-md">
+        <div className="text-center mb-6 sm:mb-8 px-4">
+          {/* <p className="mx-auto text-[11px] sm:text-xs font-semibold tracking-widest text-blue-700 uppercase mb-3 px-3 py-1 border border-blue-300 rounded-xl inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-blue-50 shadow-md">
             <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
             Reviews
-          </p>
+          </p> */}
 
           <h2 className="relative flex items-center justify-center text-2xl sm:text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
-            <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-l from-blue-500 to-transparent mr-4"></span>
+            <span className="hidden sm:inline-block w-30 h-1 bg-gradient-to-l from-blue-500 to-transparent mr-6"></span>
             Our Customer Reviews
-            <span className="hidden sm:inline-block w-16 h-1 bg-gradient-to-r from-blue-500 to-transparent ml-4"></span>
+            <span className="hidden sm:inline-block w-30 h-1 bg-gradient-to-r from-blue-500 to-transparent ml-6"></span>
           </h2>
         </div>
 
@@ -104,22 +104,28 @@ export default function ReviewsSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
 
           {/* LEFT CONTENT */}
-          <div className="lg:col-span-3 text-center lg:text-left">
-            <h2 className="text-3xl md:text-4xl font-bold leading-tight mb-3">
+          <div className="lg:col-span-3 flex flex-col items-center text-center">
+            {/* Heading */}
+            <h2 className="text-3xl md:text-4xl text-black font-bold leading-tight mb-3">
               Excellent
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
-                Google Reviews
-              </span>
             </h2>
 
-            <div className="flex items-center justify-center lg:justify-start gap-2">
-              <div className="flex gap-1 text-yellow-400 text-lg">
-                ★ ★ ★ ★ ★
-              </div>
-              <span className="text-sm font-semibold text-slate-700">
-                4.8 / 5
-              </span>
+            {/* Stars */}
+            <div className="flex gap-1 text-yellow-400 text-2xl mb-1">
+              ★ ★ ★ ★ ★
             </div>
+
+            {/* Review Count */}
+            <div className="text-sm text-slate-600">
+              Based on 16k+ Reviews
+            </div>
+
+            {/* Google Logo */}
+            <img
+              src="/google.webp"   // 🔁 replace with your actual path
+              alt="Google Reviews"
+              className="h-30 object-contain"
+            />
           </div>
 
           {/* RIGHT CAROUSEL */}

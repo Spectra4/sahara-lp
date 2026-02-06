@@ -17,7 +17,7 @@ export default function Home() {
       <Hero />
       <Stats/>
       <WhyChooseUs />
-      <BeforeAfter />
+      {/* <BeforeAfter /> */}
       <CtaFirst />
       <ServicesSection />
       <ReviewsSection />

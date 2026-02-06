@@ -2,13 +2,15 @@
 
 import { Phone, MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
+import { FaWhatsapp } from "react-icons/fa";
+
 
 export default function FloatingContactButtons() {
   return (
     <>
       {/* WhatsApp Button (Left) */}
       <motion.a
-        href="https://wa.me/919999999999"
+        href="https://wa.me/918956567130"
         target="_blank"
         rel="noopener noreferrer"
         className="
@@ -25,16 +27,17 @@ export default function FloatingContactButtons() {
       >
         <motion.div
           className="flex items-center justify-center"
-          whileHover={{ rotate: [0, 10, -10, 0], color: "#ffffff" }}
+          whileHover={{ rotate: [0, 10, -10, 0] }}
           transition={{ duration: 0.3 }}
         >
-          <MessageCircle size={26} className="text-white hover:text-yellow-300 transition-colors duration-300" />
+          <FaWhatsapp className="text-white text-3xl md:text-4xl" />
         </motion.div>
       </motion.a>
 
+
       {/* Call Button (Right) */}
       <motion.a
-        href="tel:+919999999999"
+        href="tel:+918956567130"
         className="
           fixed bottom-6 right-4 z-50
           flex items-center justify-center
