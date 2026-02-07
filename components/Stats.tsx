@@ -138,7 +138,7 @@ export default function Stats() {
       <div className="text-center max-w-7xl mx-auto px-6">
         
         {/* Cards */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {stats.map((stat, index) => {
             const count = useCountUp(stat.value, visible);
             const colors = colorClasses[stat.color];
@@ -175,7 +175,7 @@ export default function Stats() {
                 </div>
 
                 {/* Label */}
-                <p className="mt-2 text-sm text-slate-600">
+                <p className="mt-2 text-sm font-bold text-slate-600">
                   {stat.label}
                 </p>
 
