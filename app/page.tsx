@@ -3,7 +3,6 @@
 import Hero from '@/components/Hero';
 import Stats from '@/components/Stats';
 import WhyChooseUs from '@/components/WhyChooseUs';
-import BeforeAfter from '@/components/BeforeAfter';
 import CtaFirst from '@/components/CtaFirst';
 import ServicesSection from '@/components/ServicesSection';
 import ReviewsSection from '@/components/ReviewsSection';
@@ -17,7 +16,6 @@ export default function Home() {
       <Hero />
       <Stats/>
       <WhyChooseUs />
-      {/* <BeforeAfter /> */}
       <CtaFirst />
       <ServicesSection />
       <ReviewsSection />

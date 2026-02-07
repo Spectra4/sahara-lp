@@ -124,7 +124,7 @@ export default function ReviewsSection() {
             <img
               src="/google.webp"   // 🔁 replace with your actual path
               alt="Google Reviews"
-              className="h-30 object-contain"
+              className="h-15 object-contain mt-2"
             />
           </div>
 

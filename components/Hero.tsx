@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <>
       <section
-        className="relative min-h-[90vh] md:min-h-[80vh] flex items-center overflow-hidden"
+        className="relative min-h-[100vh] md:min-h-[80vh] flex items-center overflow-hidden"
         id="home"
       >
         {/* DESKTOP BACKGROUND */}
@@ -23,7 +23,7 @@ export default function Hero() {
 
         {/* MOBILE BACKGROUND */}
         <div
-          className="block md:hidden absolute inset-0 bg-cover bg-top min-h-[90vh]"
+          className="block md:hidden absolute inset-0 bg-cover bg-top min-h-[100vh]"
           style={{
             backgroundImage: "url('/banner/sahara-mobile-viewbanner.webp')",
           }}
@@ -33,8 +33,8 @@ export default function Hero() {
         <div
           className="
             absolute inset-0
-            bg-gradient-to-b from-white/50 via-white/25 to-white/10
-            md:bg-gradient-to-r md:from-white/45 md:via-white/25 md:to-white/15
+            bg-gradient-to-b from-black/15 via-black/6 to-black/2
+            md:bg-gradient-to-r md:from-black/15 md:via-black/6 md:to-black/2
           "
         />
 
@@ -47,7 +47,7 @@ export default function Hero() {
         <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
           <div className="max-w-2xl text-center md:text-left">
             {/* Heading */}
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-slate-900 mt-2 md:mt-0">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-slate-900 mt-2 md:mt-0 text-shadow-sm">
               Professional <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">
                 Home Cleaning Services
@@ -56,7 +56,7 @@ export default function Hero() {
             </h1>
 
             {/* Price */}
-            <p className="mt-4 text-2xl font-extrabold text-slate-900">
+            <p className="mt-4 text-2xl font-extrabold text-blue-600">
               Starts at <span className="text-blue-600">₹ 2999</span>
             </p>
 

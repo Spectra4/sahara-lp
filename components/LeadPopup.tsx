@@ -12,6 +12,7 @@ type LeadPopupProps = {
 export default function LeadPopup({ open, onClose }: LeadPopupProps) {
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [propertyType, setPropertyType] = useState("");
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
@@ -28,6 +29,7 @@ export default function LeadPopup({ open, onClose }: LeadPopupProps) {
         {
           name,
           phone,
+          propertyType,
         },
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
@@ -35,6 +37,7 @@ export default function LeadPopup({ open, onClose }: LeadPopupProps) {
       setSuccess(true);
       setName("");
       setPhone("");
+      setPropertyType("");
       setTimeout(onClose, 2000);
     } catch (error) {
       console.error("EmailJS error:", error);
@@ -88,6 +91,18 @@ export default function LeadPopup({ open, onClose }: LeadPopupProps) {
                 onChange={(e) => setPhone(e.target.value)}
                 className="w-full rounded-lg border px-4 py-3 text-sm text-gray-700"
               />
+              <select
+                required
+                value={propertyType}
+                onChange={(e) => setPropertyType(e.target.value)}
+                className="w-full rounded-lg border px-4 py-3 text-sm text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+              >
+                <option value="">Select Property Type</option>
+                <option value="1BHK">1BHK</option>
+                <option value="2BHK">2BHK</option>
+                <option value="3BHK">3BHK</option>
+                <option value="Commercial">Commercial Space</option>
+              </select>
 
               <button
                 type="submit"
@@ -96,7 +111,7 @@ export default function LeadPopup({ open, onClose }: LeadPopupProps) {
                 bg-gradient-to-r from-blue-600 to-cyan-500
                 hover:opacity-90 transition"
               >
-                {loading ? "Sending..." : "Request Callback"}
+                {loading ? "Sending..." : "Submit"}
               </button>
             </form>
           </>
