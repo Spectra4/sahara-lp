@@ -2,6 +2,7 @@
 
 import { X } from "lucide-react";
 import { useState } from "react";
+import emailjs from "@emailjs/browser";
 
 type LeadPopupProps = {
   open: boolean;
@@ -20,19 +21,26 @@ export default function LeadPopup({ open, onClose }: LeadPopupProps) {
     e.preventDefault();
     setLoading(true);
 
-    const res = await fetch("/api/lead", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, phone }),
-    });
+    try {
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          name,
+          phone,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
 
-    setLoading(false);
-
-    if (res.ok) {
       setSuccess(true);
       setName("");
       setPhone("");
       setTimeout(onClose, 2000);
+    } catch (error) {
+      console.error("EmailJS error:", error);
+      alert("Something went wrong. Please try again.");
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -85,25 +93,23 @@ export default function LeadPopup({ open, onClose }: LeadPopupProps) {
                 type="submit"
                 disabled={loading}
                 className="w-full rounded-lg py-3 font-semibold text-white
-        bg-gradient-to-r from-blue-600 to-cyan-500
-        hover:opacity-90 transition"
+                bg-gradient-to-r from-blue-600 to-cyan-500
+                hover:opacity-90 transition"
               >
                 {loading ? "Sending..." : "Request Callback"}
               </button>
             </form>
           </>
         ) : (
-          /* ✅ SUCCESS / THANK YOU STATE */
+          /* ✅ SUCCESS STATE */
           <div className="flex flex-col items-center text-center py-6">
-            {/* Success Icon */}
-            <div
-              className="mb-4 flex h-16 w-16 items-center justify-center
-      rounded-full bg-green-100 text-green-600 text-2xl"
-            >
+            <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100 text-green-600 text-2xl">
               ✓
             </div>
 
-            <h3 className="text-xl font-bold text-gray-900 mb-2">Thank You!</h3>
+            <h3 className="text-xl font-bold text-gray-900 mb-2">
+              Thank You!
+            </h3>
 
             <p className="text-sm text-gray-600 max-w-xs">
               Your request has been received. Our team will contact you shortly
@@ -113,7 +119,7 @@ export default function LeadPopup({ open, onClose }: LeadPopupProps) {
             <button
               onClick={onClose}
               className="mt-6 rounded-lg px-6 py-2 text-sm font-semibold
-      text-white bg-green-600 hover:bg-green-700 transition"
+              text-white bg-green-600 hover:bg-green-700 transition"
             >
               Close
             </button>

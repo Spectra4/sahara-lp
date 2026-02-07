@@ -106,7 +106,7 @@ export default function ReviewsSection() {
           {/* LEFT CONTENT */}
           <div className="lg:col-span-3 flex flex-col items-center text-center">
             {/* Heading */}
-            <h2 className="text-3xl md:text-4xl text-black font-bold leading-tight mb-3">
+            <h2 className="text-3xl md:text-4xl text-black font-bold leading-tight mb-1">
               Excellent
             </h2>
 
