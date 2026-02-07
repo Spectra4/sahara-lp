@@ -10,7 +10,7 @@ export default function Hero() {
   return (
     <>
       <section
-        className="relative min-h-[100vh] md:min-h-[80vh] flex items-center overflow-hidden"
+        className="relative min-h-[100vh] md:min-h-[80vh] flex items-start md:items-center overflow-hidden"
         id="home"
       >
         {/* DESKTOP BACKGROUND */}
@@ -44,7 +44,7 @@ export default function Hero() {
         </div>
 
         {/* Content */}
-        <div className="relative z-10 max-w-7xl mx-auto px-6 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 w-full mt-18 md:mt-0">
           <div className="max-w-2xl text-center md:text-left">
             {/* Heading */}
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold leading-tight text-slate-900 mt-2 md:mt-0 text-shadow-sm">
