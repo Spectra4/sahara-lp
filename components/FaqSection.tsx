@@ -43,14 +43,6 @@ export default function FaqSection() {
     <section className="pb-10 relative overflow-hidden" id="faq">
 
       <div className="relative z-10 max-w-4xl mx-auto px-4">
-        {/* <div className="text-center max-w-7xl mx-auto px-4">
-          <p className="mx-auto text-center text-[11px] sm:text-xs font-semibold tracking-widest text-blue-700 uppercase mb-3 px-3 py-1 border border-blue-300 rounded-xl inline-flex items-center gap-2 bg-gradient-to-r from-blue-100 to-blue-50 shadow-md">
-            <span className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
-
-            FAQ
-          </p>
-        </div> */}
-
 
         {/* Heading */}
         <motion.h2
