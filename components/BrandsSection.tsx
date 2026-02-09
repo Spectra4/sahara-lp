@@ -5,12 +5,12 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const logos = [
-  "/logos/1.jpg",
-  "/logos/2.jpg",
-  "/logos/3.jpg",
-  "/logos/4.jpg",
-  "/logos/5.jpg",
-  "/logos/6.jpg",
+  "/sahara/logos/1.jpg",
+  "/sahara/logos/2.jpg",
+  "/sahara/logos/3.jpg",
+  "/sahara/logos/4.jpg",
+  "/sahara/logos/5.jpg",
+  "/sahara/logos/6.jpg",
 ];
 
 export default function BrandsSection() {

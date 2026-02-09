@@ -122,7 +122,7 @@ export default function ReviewsSection() {
 
             {/* Google Logo */}
             <img
-              src="/google.webp"   // 🔁 replace with your actual path
+              src="/sahara/google.webp"   // 🔁 replace with your actual path
               alt="Google Reviews"
               className="h-15 object-contain mt-2"
             />
@@ -195,7 +195,7 @@ function ReviewCard({ review }: { review: any }) {
             <span key={i}>★</span>
           ))}
         </div>
-        <img src="/verified.png" alt="Verified" className="w-4 h-4" />
+        <img src="/sahara/verified.png" alt="Verified" className="w-4 h-4" />
       </div>
 
       {/* Name */}

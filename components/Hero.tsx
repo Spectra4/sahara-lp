@@ -17,7 +17,7 @@ export default function Hero() {
         <div
           className="hidden md:block absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/banner/sahara-desktop-banner-white.webp')",
+            backgroundImage: "url('/sahara/banner/sahara-desktop-banner-white.webp')",
           }}
         />
 
@@ -25,7 +25,7 @@ export default function Hero() {
         <div
           className="block md:hidden absolute inset-0 bg-cover bg-top min-h-[100vh]"
           style={{
-            backgroundImage: "url('/banner/sahara-mobile-viewbanner.webp')",
+            backgroundImage: "url('/sahara/banner/sahara-mobile-viewbanner.webp')",
           }}
         />
 

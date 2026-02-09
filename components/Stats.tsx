@@ -55,6 +55,7 @@ const stats: Stat[] = [
   {
     label: "Years Experience",
     value: 16,
+    suffix: "+",
     icon: <Sparkles className="h-6 w-6" />,
     color: "orange",
   },
