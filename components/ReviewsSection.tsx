@@ -116,8 +116,8 @@ export default function ReviewsSection() {
             </div>
 
             {/* Review Count */}
-            <div className="text-sm text-slate-600">
-              Based on 1.6k+ Reviews
+            <div className="text-sm text-black">
+              Based on <b className="font-extrabold">1600+</b> Reviews
             </div>
 
             {/* Google Logo */}

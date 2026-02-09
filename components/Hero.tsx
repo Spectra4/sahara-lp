@@ -74,7 +74,7 @@ export default function Hero() {
 
               <li className="flex items-center gap-3 justify-center lg:justify-start">
                 <Star className="w-5 h-5 text-blue-600" />
-                <span>1.6k+ Google Reviews</span>
+                <span><b>1600+</b> Google Reviews</span>
               </li>
             </ul>
 
