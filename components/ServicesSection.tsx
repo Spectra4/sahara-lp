@@ -9,37 +9,37 @@ const services = [
   {
     title: "Home Deep Cleaning",
     text: "Complete top-to-bottom cleaning for bedrooms, living areas, kitchens, and bathrooms - removing dust, grease, and germs for a healthier home.",
-    image: "/sahara/Services/Deep-cleaning.jpeg",
+    image: "Services/Deep-cleaning.jpeg",
   },
   {
     title: "Housekeeping Services",
     text: "Regular or one-time housekeeping to keep your home or office consistently clean, organized, and fresh.",
-    image: "/sahara/Services/Housekeeping-Services.jpeg",
+    image: "Services/Housekeeping-Services.jpeg",
   },
   {
     title: "Bathroom & Kitchen Cleaning",
     text: "Powerful stain removal, descaling, and sanitization for hygienic, sparkling bathrooms and grease-free kitchens.",
-    image: "/sahara/Services/bathroom.jpeg",
+    image: "Services/bathroom.jpeg",
   },
   {
     title: "Sofa & Mattress Cleaning",
     text: "Professional shampooing and vacuum cleaning to eliminate dust mites, odors, and stains - bringing your furniture back to life.",
-    image: "/sahara/Services/Sofa-Mattress-Cleaning.jpeg",
+    image: "Services/Sofa-Mattress-Cleaning.jpeg",
   },
   {
     title: "Window & Balcony Cleaning",
     text: "Crystal-clear glass and spotless balconies using safe tools and professional techniques.",
-    image: "/sahara/Services/balcony.jpeg",
+    image: "Services/balcony.jpeg",
   },
   {
     title: "Move-In / Move-Out Cleaning",
     text: "Deep cleaning before you move in or after you move out - perfect for tenants, landlords, and property managers.",
-    image: "/sahara/Services/move-in-cleaning.jpeg",
+    image: "Services/move-in-cleaning.jpeg",
   },
   {
     title: "Residential Apartment Cleaning",
     text:  "Our Residential Apartment Cleaning Service is the easiest way to get a super clean home altogether.",
-    image: "/sahara/Services/apartment.jpeg",
+    image: "Services/apartment.jpeg",
   },
 ];
 

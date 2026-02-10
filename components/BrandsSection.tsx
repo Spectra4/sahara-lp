@@ -1,16 +1,17 @@
 "use client";
 
+export const BASE_PATH = "/sahara";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 const logos = [
-  "/sahara/logos/1.jpg",
-  "/sahara/logos/2.jpg",
-  "/sahara/logos/3.jpg",
-  "/sahara/logos/4.jpg",
-  "/sahara/logos/5.jpg",
-  "/sahara/logos/6.jpg",
+  `${BASE_PATH}/logos/1.jpg`,
+  `${BASE_PATH}/logos/2.jpg`,
+  `${BASE_PATH}/logos/3.jpg`,
+  `${BASE_PATH}/logos/4.jpg`,
+  `${BASE_PATH}/logos/5.jpg`,
+  `${BASE_PATH}/logos/6.jpg`,
 ];
 
 export default function BrandsSection() {

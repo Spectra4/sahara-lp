@@ -1,5 +1,6 @@
 "use client";
 
+export const BASE_PATH = "/sahara";
 import { useState } from "react";
 import LeadPopup from "@/components/LeadPopup";
 import { Star, CheckCircle, IndianRupee } from "lucide-react";
@@ -17,7 +18,7 @@ export default function Hero() {
         <div
           className="hidden md:block absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/sahara/banner/sahara-desktop-banner-white.webp')",
+            backgroundImage: `url('${BASE_PATH}/banner/sahara-desktop-banner-white.webp')`,
           }}
         />
 
@@ -25,7 +26,7 @@ export default function Hero() {
         <div
           className="block md:hidden absolute inset-0 bg-cover bg-top min-h-[100vh]"
           style={{
-            backgroundImage: "url('/sahara/banner/sahara-mobile-viewbanner.webp')",
+            backgroundImage: `url('${BASE_PATH}/banner/sahara-mobile-viewbanner.webp')`,
           }}
         />
 
