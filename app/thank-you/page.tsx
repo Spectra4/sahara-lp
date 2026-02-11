@@ -1,4 +1,12 @@
+"use client";
+
+import { useEffect } from "react";
+
 export default function ThankYouPage() {
+  useEffect(() => {
+    (window as any).dataLayer?.push({ event: "thank_you" });
+  }, []);
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-50 px-4">
       <div className="max-w-md w-full rounded-2xl bg-white p-8 shadow-xl text-center">
@@ -18,7 +26,7 @@ export default function ThankYouPage() {
         <a
           href="/"
           className="inline-block rounded-lg px-6 py-3 text-sm font-semibold
-          text-white bg-gradient-to-r from-blue-600 to-cyan-500 shadow-lg hover:shadow-2xl hover:-translate-y-0.5 transition"
+          text-white bg-gradient-to-r from-blue-600 to-cyan-500"
         >
           Back to Home
         </a>
