@@ -134,6 +134,7 @@ export default function Stats() {
     <section
       ref={ref}
       className="py-10 pt-12"
+      id="stats"
     >
 
       <div className="text-center max-w-7xl mx-auto px-6">

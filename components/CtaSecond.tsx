@@ -4,7 +4,7 @@ import { FaWhatsapp } from "react-icons/fa";
 
 export default function CtaSecond() {
   return (
-    <section className="relative w-full overflow-hidden bg-gradient-to-br from-blue-500 via-blue-400 to-indigo-500">
+    <section className="relative w-full overflow-hidden bg-gradient-to-br from-blue-500 via-blue-400 to-indigo-500" id="cta">
 
       {/* TOP CURVE */}
       <svg

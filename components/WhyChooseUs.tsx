@@ -34,7 +34,7 @@ const items = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="py-8 relative overflow-hidden">
+    <section className="py-8 relative overflow-hidden" id="why-choose-us">
 
       <div className="max-w-7xl mx-auto px-6 relative">
         {/* Header */}

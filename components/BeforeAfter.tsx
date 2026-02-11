@@ -45,7 +45,7 @@ export default function BeforeAfterCarousel() {
   const prev = () => setIndex((i) => Math.max(i - 1, 0));
 
   return (
-    <section className="py-8">
+    <section className="py-8" id="before-after">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-10 px-4">

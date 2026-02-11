@@ -15,7 +15,7 @@ const logos = [
 
 export default function BrandsSection() {
   return (
-    <section className="w-full py-14 overflow-hidden">
+    <section className="w-full py-14 overflow-hidden" id="brands">
       <div className="max-w-7xl mx-auto px-4 text-center">
 
         {/* Header (unchanged) */}
