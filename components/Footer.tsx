@@ -19,13 +19,24 @@ export default function Footer() {
 
         {/* Company Info */}
         <div>
-          <h2 className="text-2xl font-bold mb-4">Sahara Cleaning</h2>
+          {/* Logo */}
+          <div className="flex justify-center sm:justify-start mb-4">
+            <img
+              src="/logo.png"   // put logo in /public folder
+              alt="Sahara Cleaning Logo"
+              width={140}
+              height={60}
+              className="object-contain"
+            />
+          </div>
+
           <p className="text-gray-200 leading-relaxed">
             Sahara Cleaning is a premier provider of industrial cleaning solutions,
             dedicated to delivering top-notch services that ensure safety,
             efficiency, and environmental compliance for businesses worldwide.
           </p>
         </div>
+
 
         {/* Quick Links */}
         <div>

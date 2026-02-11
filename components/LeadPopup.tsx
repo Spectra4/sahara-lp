@@ -4,6 +4,7 @@ import { X } from "lucide-react";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import emailjs from "@emailjs/browser";
+import { User, Phone } from "lucide-react";
 
 type LeadPopupProps = {
   open: boolean;
@@ -33,7 +34,7 @@ export default function LeadPopup({ open, onClose }: LeadPopupProps) {
           phone,
           propertyType,
         },
-        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!,
       );
 
       // reset
@@ -70,31 +71,39 @@ export default function LeadPopup({ open, onClose }: LeadPopupProps) {
           <X size={20} />
         </button>
 
-        <h3 className="text-xl font-bold text-gray-900 mb-2">
+        <h3 className="text-xl text-center font-bold text-gray-900 mb-2">
           Book Your Cleaning
         </h3>
-        <p className="text-sm text-gray-600 mb-6">
+        <p className="text-sm text-center text-gray-600 mb-6">
           Enter your details and we’ll call you shortly.
         </p>
 
         <form className="space-y-4" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            required
-            placeholder="Your Name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            className="w-full rounded-lg border px-4 py-3 text-sm text-gray-700"
-          />
+          <div className="relative">
+            <User className="absolute left-4 top-1/2 -translate-y-1/2 text-blue-500 w-5 h-5" />
+            <input
+              type="text"
+              required
+              placeholder="Full Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="w-full rounded-lg border pl-12 pr-4 py-3 text-sm text-gray-700
+               focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
 
-          <input
-            type="tel"
-            required
-            placeholder="Phone Number"
-            value={phone}
-            onChange={(e) => setPhone(e.target.value)}
-            className="w-full rounded-lg border px-4 py-3 text-sm text-gray-700"
-          />
+          <div className="relative">
+            <Phone className="absolute left-4 top-1/2 -translate-y-1/2 text-blue-500 w-5 h-5" />
+            <input
+              type="tel"
+              required
+              placeholder="Phone No"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+              className="w-full rounded-lg border pl-12 pr-4 py-3 text-sm text-gray-700
+               focus:outline-none focus:ring-2 focus:ring-blue-500"
+            />
+          </div>
 
           <select
             required
@@ -113,7 +122,7 @@ export default function LeadPopup({ open, onClose }: LeadPopupProps) {
             type="submit"
             disabled={loading}
             className="w-full rounded-lg py-3 font-semibold text-white
-            bg-gradient-to-r from-blue-600 to-cyan-500
+            bg-linear-to-r from-blue-600 to-cyan-500
             hover:opacity-90 transition"
           >
             {loading ? "Sending..." : "Submit"}

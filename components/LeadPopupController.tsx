@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import LeadPopup from "@/components/LeadPopup";
 
 const POPUP_DELAY = 25000; // 25 seconds
@@ -8,19 +8,22 @@ const STORAGE_KEY = "lead-popup-shown";
 
 export default function LeadPopupController() {
   const [open, setOpen] = useState(false);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   useEffect(() => {
     if (typeof window === "undefined") return;
 
+    // show only once ever
     const alreadyShown = localStorage.getItem(STORAGE_KEY);
     if (alreadyShown === "true") return;
 
-    const timer = setTimeout(() => {
+    timerRef.current = setTimeout(() => {
       setOpen(true);
-      localStorage.setItem(STORAGE_KEY, "true");
     }, POPUP_DELAY);
 
-    return () => clearTimeout(timer);
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+    };
   }, []);
 
   const handleClose = () => {
@@ -28,10 +31,5 @@ export default function LeadPopupController() {
     localStorage.setItem(STORAGE_KEY, "true");
   };
 
-  return (
-    <LeadPopup
-      open={open}
-      onClose={handleClose}
-    />
-  );
+  return <LeadPopup open={open} onClose={handleClose} />;
 }

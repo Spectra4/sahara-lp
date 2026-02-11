@@ -18,7 +18,7 @@ export default function Hero() {
         <div
           className="hidden md:block absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('${BASE_PATH}/banner/sahara-desktop-banner-white.webp')`,
+            backgroundImage: "url(/banner/sahara-desktop-banner-white.webp)",
           }}
         />
 
@@ -26,7 +26,7 @@ export default function Hero() {
         <div
           className="block md:hidden absolute inset-0 bg-cover bg-top min-h-[100vh]"
           style={{
-            backgroundImage: `url('${BASE_PATH}/banner/sahara-mobile-viewbanner.webp')`,
+            backgroundImage: "url(/banner/sahara-mobile-viewbanner.webp)",
           }}
         />
 
@@ -34,8 +34,8 @@ export default function Hero() {
         <div
           className="
             absolute inset-0
-            bg-gradient-to-b from-black/15 via-black/6 to-black/2
-            md:bg-gradient-to-r md:from-black/15 md:via-black/6 md:to-black/2
+            bg-gradient-to-b from-black/8 via-black/4 to-black/2
+            md:bg-gradient-to-r md:from-black/8 md:via-black/4 md:to-black/2
           "
         />
 

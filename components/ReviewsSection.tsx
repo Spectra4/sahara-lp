@@ -1,6 +1,5 @@
 "use client";
 
-export const BASE_PATH = "/sahara";
 import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 
@@ -123,7 +122,7 @@ export default function ReviewsSection() {
 
             {/* Google Logo */}
             <img
-              src={`${BASE_PATH}/google.webp`}   // 🔁 replace with your actual path
+              src="/google.webp"   // 🔁 replace with your actual path
               alt="Google Reviews"
               className="h-15 object-contain mt-2"
             />
@@ -196,7 +195,7 @@ function ReviewCard({ review }: { review: any }) {
             <span key={i}>★</span>
           ))}
         </div>
-        <img src={`${BASE_PATH}/verified.png`} alt="Verified" className="w-4 h-4" />
+        <img src="/verified.png" alt="Verified" className="w-4 h-4" />
       </div>
 
       {/* Name */}
